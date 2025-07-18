@@ -1,0 +1,3 @@
+#!/bin/bash
+# Prints "Hello, World" to stdout
+echo "Hello, World"
