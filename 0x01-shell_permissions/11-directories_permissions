@@ -1,0 +1,3 @@
+#!/bin/bash
+# Adds execute permission to all directories in current dir for all users
+find . -type d -exec chmod a+x {} \;
