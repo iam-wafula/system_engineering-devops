@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# A Bash script that stops (pauses) the 4-to_infinity_and_beyond process using SIGSTOP
+
+# Find the PID of the infinite loop script
+pid=$(pgrep -f 4-to_infinity_and_beyond)
+
+# If found, send SIGSTOP signal
+if [ -n "$pid" ]; then
+  kill -STOP "$pid"
+fi
